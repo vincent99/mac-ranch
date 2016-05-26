@@ -29,28 +29,24 @@ mac-ranch Usage:
 ./mac-ranch -c -n <number of hosts>
 ```
 
-### Deploy source code versions
-```
-./mac-ranch -c -s rancher/build-master -p -n <number of hosts>
-```
-
-For more customizations/testing capabilities you can sepecify the Docker images for server
+#### A specific release
 ```
 ./mac-ranch -c -n <number of hosts> -s rancher/server:development
 ```
 
-
+#### A build-master
 ```
-### List all the hosts:
+./mac-ranch -c -s rancher/build-master -p -n <number of hosts>
+```
 
+### List all the hosts
 ```
 ./mac-ranch -l
 ```
 
-### Destroy the cluster(-q for quiet):
-
+### Destroy the cluster
 ```
-./mac-ranch -d [-q]
+./mac-ranch -d
 ```
 
 ### Contact
@@ -72,4 +68,3 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-
