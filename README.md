@@ -36,7 +36,7 @@ mac-ranch Usage:
 
 #### A build-master
 ```
-./mac-ranch -c -s rancher/build-master -p -n <number of hosts>
+./mac-ranch -c -n <number of hosts> -p -s rancher/build-master
 ```
 
 ### List all the hosts
